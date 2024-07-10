@@ -15,17 +15,15 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
-        <div class="story-content">
-          {{.Content}}
-        </div>
+        <div class="story-content">{{.Content}}</div>
       </div>
       <div class="col-lg-6">
         {{ with .Params.slideImage }}
         <div class="story-slider">
           {{range . }}
-            <div class="slider-item">
-              <img src="{{ .image | absURL }}" alt="images">
-            </div>
+          <div class="slider-item">
+            <img src="{{ .image | absURL }}" alt="images" />
+          </div>
           {{end}}
         </div>
         {{ end }}
@@ -33,11 +31,6 @@
     </div>
   </div>
 </section>
-{{ partial "gallery.html" . }}
-{{ partial "testimonial.html" . }}
-{{ partial "client.html" . }}
-{{ partial "investor.html" . }}
-{{ partial "contactAddress.html" . }}
-
-
-{{end}}
+{{ partial "gallery.html" . }} {{ partial "testimonial.html" . }} {{ partial
+"client.html" . }} {{ partial "investor.html" . }} {{ partial "cta.html" . }} {{
+partial "contactAddress.html" . }} {{end}}
