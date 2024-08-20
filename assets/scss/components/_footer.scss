@@ -1,6 +1,6 @@
 .footer {
   padding: 100px 0;
-  background: #f7f8fc;
+  background: #fff;
   @include desktop {
     padding: 50px 0;
     text-align: center;
@@ -50,8 +50,8 @@
         }
 
         a {
-          font-size: 12px;
-          color: $text-color-dark;
+          font-size: 16px;
+          color: $text-color;
           transition: all 0.5s ease-in-out;
 
           &:hover {
@@ -95,13 +95,14 @@
         list-style: none;
         padding-left: 15px;
         display: inline-block;
+        font-size: 16px;
 
         &:first-child {
           padding-left: 0;
         }
 
         a {
-          color: #666666;
+          color: $text-color;
           transition: all 0.3s ease-in-out;
           text-decoration: none;
 
@@ -124,8 +125,11 @@
     }
 
     p {
-      font-size: 12px;
+      font-size: 16px;
       margin-bottom: 0;
+      a {
+        color: $primary-color;
+      }
     }
 
     ul {
@@ -138,8 +142,8 @@
         padding-left: 20px;
 
         a {
-          font-size: 12px;
-          color: #666666;
+          font-size: 16px;
+          color: #000;
           transition: all 0.3s ease-in-out;
         }
       }
