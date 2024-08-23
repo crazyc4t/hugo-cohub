@@ -3,8 +3,19 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-auto col-md-12">
-        <div class="page-header">
-          <h2>{{ .Title }}</h2>
+        <img
+          src="/images/logo.png"
+          alt="Logo image"
+          style="
+            text-align: center;
+            height: auto;
+            width: 500px;
+            margin: auto;
+            display: block;
+          "
+        />
+        <div class="page-header mt-5">
+          <h2>Contact Us</h2>
           <p>{{.Params.subTitle}}</p>
         </div>
       </div>
@@ -16,7 +27,7 @@
           <form
             id="contact-form"
             class="row"
-            action="{{ .Site.Params.fabFormURL }}"
+            action="https://formspree.io/f/xeojproq"
             method="POST"
           >
             <div class="col-md-6">
@@ -34,7 +45,7 @@
                 class="form-control"
                 id="validationCustom02"
                 required=""
-                name="email"
+                name="Email"
                 placeholder="Your Email"
               />
             </div>
@@ -43,28 +54,14 @@
                 class="form-control"
                 id="exampleFormControlTextarea1"
                 rows="8"
-                name="message"
+                name="Message"
                 placeholder="Let us know your thoughts…"
               ></textarea>
-            </div>
-            <div class="col-md-12">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="gridCheck"
-                  name="checkbox"
-                  required
-                />
-                <label class="form-check-label" for="gridCheck">
-                  I agree that my submitted data is being collected and stored.
-                </label>
-              </div>
             </div>
             <div class="col-lg-12">
               <button
                 type="submit"
-                class="btn btn-primary"
+                class="btn btn-primary btn-hover"
                 id="contact-form-button"
                 formtarget="_blank"
               >
